@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react'
 import '../../custom.scss'
+
+import NavBar from '../Navigation/Header'
 
 const ServeurScreen = () => {
     return(
-        <div className="bg-primary">
-            
+        <div>
+          <NavBar /> 
         </div>
     );
 }

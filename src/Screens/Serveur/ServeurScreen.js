@@ -1,12 +1,12 @@
 import React from 'react'
 import '../../custom.scss'
 
-import NavBar from '../Navigation/Header'
+import Layout from '../Navigation/Layout'
 
 const ServeurScreen = () => {
     return(
         <div>
-          <NavBar /> 
+          <Layout /> 
         </div>
     );
 }

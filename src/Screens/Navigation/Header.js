@@ -1,17 +1,11 @@
-import React from 'react';
-import {useState} from 'react'
+import React, {useState} from 'react';
 import Logo from '../../images/logo.png'
 
 import HeaderImg from '../../images/fond/minecraft-screen.png'
-import Sidebar from 'react-sidebar';
 
 const Header = () => {
 
-    const [sidebarOpen, setSidebarState] = useState(true)
-
-    const onSetSidebarOpen = (open) => {
-        setSidebarState(open)
-    }
+    const [sidebar, setSidebarState] = useState(false)
 
     return (
         <div>
@@ -45,12 +39,10 @@ const Header = () => {
             </nav>
             <div style={styles.headerContainer} className="row">
                 <div className="col-md-2"></div>
-                <button class="btn btn-secondary col-md-3 mx-auto" style={styles.addServerButton}>Ajouter un serveur</button>
+                <button className="btn btn-secondary col-md-3 mx-auto" style={styles.addServerButton}>Ajouter un serveur</button>
                 <p style={styles.mainText} className="text-white mx-auto col-md-4">Vous cherchez le meilleur serveur minecraft gratuit ? Vous trouverez des serveurs français de tous les types. Découvrez les meilleurs serveurs Minecraft premiums et  crackés parmis les catégories PvP, Faction, PvPBox, Skyblock, Survie, RP, MMO et bien d'autres </p>
                 <div className="col-md-3"></div>
             </div>
-            <Sidebar sidebar={<b>test content</b>} open={sidebarOpen} onSetOpen={onSetSidebarOpen} styles={{ sidebar: { background: "white" } }} />
-
         </div>
     )
 }

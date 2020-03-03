@@ -51,7 +51,7 @@ export default Header;
 
 const styles = {
     container: {
-        fontSize: 11
+        fontSize: 13
     },
     logo: {
         width: 180
@@ -74,6 +74,7 @@ const styles = {
     },
     headerContainer: {
         backgroundImage: "url(" + HeaderImg + ")" ,
+        maxWidth: 1920,
         height: 250,
         alignItems: 'center',
         fontSize: 15

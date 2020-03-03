@@ -9,5 +9,9 @@ $theme-colors: (
   "dark": #393E46
 );
 
+.row {
+  margin:0 !important
+}
+
 /* finally, import Bootstrap */
 @import './node_modules/bootstrap/scss/bootstrap.scss';

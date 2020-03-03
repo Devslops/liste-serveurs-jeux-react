@@ -17,6 +17,19 @@
     color: white;
     width: 75%;
     z-index: 200;
+    margin-bottom: 10%;
+
+    .filter-container {
+        padding-left: 15px;
+        margin-top: 8%;
+        h4 {
+            font-size: 15px;
+        }
+        li {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
 }
 
 .sb-title-text {

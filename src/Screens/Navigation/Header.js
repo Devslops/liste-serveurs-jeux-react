@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Logo from '../../images/logo.png'
 
 import HeaderImg from '../../images/fond/minecraft-screen.png'
 
 const Header = () => {
-
-    const [sidebar, setSidebarState] = useState(false)
 
     return (
         <div>
@@ -73,7 +71,7 @@ const styles = {
         marginRight: 10
     },
     headerContainer: {
-        backgroundImage: "url(" + HeaderImg + ")" ,
+        backgroundImage: "url(" + HeaderImg + ")",
         maxWidth: 1920,
         height: 250,
         alignItems: 'center',

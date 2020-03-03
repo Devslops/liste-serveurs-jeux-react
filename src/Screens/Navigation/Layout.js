@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 
 import Header from './Header'
 import Sidebar from './Sidebar'
+import Footer from './Footer'
 import Toggle from './components/Toggle'
 
-const Layout = () => {
+const Layout = ({Content}) => {
 
     const [sidebarState, setSideBarState] = useState(true)
 
-    // show/hide sidebar
+    //afficher/masquer sidebar
     const ToggleSideBar = () => {
         if(!sidebarState)
             setSideBarState(true)
@@ -16,9 +17,9 @@ const Layout = () => {
             setSideBarState(false)
     }
 
-    let sideBar = null //Sidebar component displayed
-    //Show SideBar
-    if (sidebarState == true) 
+    let sideBar = null //sidebar affichée
+    //afficher sidebar
+    if (sidebarState === true) 
         sideBar = <Sidebar ToggleSideBar={ToggleSideBar} />
 
     return (
@@ -27,8 +28,15 @@ const Layout = () => {
             <div class="row">
                 <div className="col-1"></div>
                 <div className="col-2">{sideBar}</div>
-                <Toggle ToggleSideBar={ToggleSideBar} />
+                <div className="col">
+                    <Toggle ToggleSideBar={ToggleSideBar} className="col-sm-12" />
+                    <div>
+                        {Content}
+                    </div>
+                </div>
+                
             </div>
+            <Footer className="row" />
         </div>
     )
 }

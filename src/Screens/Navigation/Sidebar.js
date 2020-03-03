@@ -5,7 +5,7 @@ import "./style/style.scss"
 const SideBar = ({ToggleSideBar}) => {
 
     return (
-        <div className="sidebar">
+        <div className="sidebar shadow">
             <div className="bg-light text-center my-auto"><h3 className="sb-title-text">Liste personnalisée</h3></div>
             
             <div class="filter-container">

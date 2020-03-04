@@ -8,7 +8,7 @@ import devFileIcon from '../../images/icons/file-code-secondary.png';
 const Footer = () => {
 
     return (
-        <div className="footer row bg-primary">
+        <div className="footer row bg-primary mt-5s">
             <div className="col-md-2 ml-5">
                 <span>Liste-serveurs-minecraft.com © 2020</span><br />
                 <span>Tous droits réservés.</span>

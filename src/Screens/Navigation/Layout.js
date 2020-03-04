@@ -34,9 +34,8 @@ const Layout = ({Content}) => {
                         {Content}
                     </div>
                 </div>
-                
             </div>
-            <Footer className="row" />
+            <Footer />
         </div>
     )
 }

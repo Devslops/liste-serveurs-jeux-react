@@ -5,7 +5,7 @@ import "./style/style.scss"
 const SideBar = ({ToggleSideBar}) => {
 
     return (
-        <div className="sidebar shadow">
+        <div className="sidebar shadow mt-5">
             <div className="bg-light text-center my-auto"><h3 className="sb-title-text">Liste personnalisée</h3></div>
             
             <div class="filter-container">
@@ -32,7 +32,7 @@ const SideBar = ({ToggleSideBar}) => {
                     <li>Mini jeux</li>
                     <li>Créatif</li>
                     <li>FreeBuild</li>
-                    <li>Hunger GAmes</li>
+                    <li>Hunger Games</li>
                     <li>Hardcore</li>
                     <li>Moddé</li>
                 </ul>

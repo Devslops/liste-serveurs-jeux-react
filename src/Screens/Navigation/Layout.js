@@ -30,7 +30,7 @@ const Layout = ({Content}) => {
             <Header />
             <div class="row">
                 <div className="offset-md-1 col-md-2">{sideBar}</div>
-                    <div className="col">
+                    <div className="col mt-5">
                         {Content}
                     </div>
             </div>

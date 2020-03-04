@@ -5,9 +5,9 @@ import Layout from '../Navigation/Layout'
 import RightArrowIcon from '../../images/icons/arrow-secondary.png'
 import LeftArrowIcon from '../../images/icons/left-arrow-secondary.png'
 
-import ServeurItem from './components/ServeurItem'
+import ServerItem from './components/ServerItem'
 
-const ServeurScreen = () => {
+const ServerScreen = () => {
     return(
         <div>
           <Layout Content={
@@ -15,16 +15,16 @@ const ServeurScreen = () => {
             <div className="row col-md-10">
               
               <div className="row serveurs">
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
-                <ServeurItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
+                <ServerItem />
               </div>
 
                 <div className="row col-md-12 mt-4 mb-4">
@@ -43,7 +43,7 @@ const ServeurScreen = () => {
     );
 }
 
-export default ServeurScreen;
+export default ServerScreen;
 
 const styles = {
   pageNumber: {

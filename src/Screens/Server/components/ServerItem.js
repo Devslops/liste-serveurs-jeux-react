@@ -4,7 +4,7 @@ import Logo from '../../../images/icons/logo.png'
 import playIcon from '../../../images/icons/play-secondary.png'
 import CopyIcon from '../../../images/icons/copy.png'
 
-const ServeurItem = () => {
+const ServerItem = () => {
     return (
         <div className="servers-container bg-light mt-3 row shadow" style={styles.container}>
             <div className="col-md-11">
@@ -54,7 +54,7 @@ const ServeurItem = () => {
     )
 }
 
-export default ServeurItem;
+export default ServerItem;
 
 const styles = {
     container: {

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Footer from './Footer'
+import FiltreIcon from '../../images/icons/filtre.png'
 
 const Layout = ({Content}) => {
 
@@ -24,7 +25,7 @@ const Layout = ({Content}) => {
     return (
         <div>
             <div className={sidebarState?"side-nav-arrow nav-open":"side-nav-arrow"}>
-                <button id="toggle" onClick={ToggleSideBar}>&#8801;</button>
+                <img id="toggle" onClick={ToggleSideBar} src={FiltreIcon} />
             </div>
             <Header />
             <div class="row">

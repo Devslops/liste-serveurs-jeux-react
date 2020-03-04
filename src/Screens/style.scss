@@ -69,7 +69,11 @@
 }
 
 .side-nav-arrow.nav-open{
-    left: 35%;
+    animation: sidebar-open 0.57s forwards;
+}
+
+@keyframes sidebar-open {
+    100% { margin-left: 35%}
 }
 
 @media screen and (max-width: 700px) {
@@ -88,7 +92,11 @@
     }
 
     .side-nav-arrow.hidden{
-        left: 35%;
+        animation: sidebar-close 0.5s forwards;
+    }
+
+    @keyframes sidebar-close {
+        35% { left: 0}
     }
 
     @keyframes slide-open {
@@ -106,7 +114,6 @@
         font-size: 60px;
         background: transparent;
         border: none;
-        padding: 10px;
     }
 
     #header-wrapper {

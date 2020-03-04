@@ -12,7 +12,7 @@ const ServeurScreen = () => {
         <div>
           <Layout Content={
 
-            <div className="row col-10">
+            <div className="row col-md-10">
               
               <div className="row serveurs">
                 <ServeurItem />
@@ -27,7 +27,7 @@ const ServeurScreen = () => {
                 <ServeurItem />
               </div>
 
-                <div className="row col-md-12 mt-4">
+                <div className="row col-md-12 mt-4 mb-4">
                   <div className="col-md-3 offset-md-9 text-right">
                     <img src={LeftArrowIcon} className="mr-2" />
                     <span style={styles.pageNumber} className="bg-light text-white mr-2">1</span>

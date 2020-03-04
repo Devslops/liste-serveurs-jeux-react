@@ -1,31 +1,32 @@
 import React from 'react'
+import "../../style.scss"
 import Logo from '../../../images/icons/logo.png'
 import playIcon from '../../../images/icons/play-secondary.png'
 import CopyIcon from '../../../images/icons/copy.png'
 
 const ServeurItem = () => {
     return (
-        <div className="bg-light mt-3 row shadow" style={styles.container}>
+        <div className="servers-container bg-light mt-3 row shadow" style={styles.container}>
             <div className="col-md-11">
                 <div class="row bg-dark p-1 mr-3">
                     <span class="bg-secondary" style={styles.typeServerItem}>Skyblock</span>
                 </div>
                     <div class="row mt-3">
-                        <div class="col-md-2 justify-content-center">
+                        <div class="col-md-2">
                         <span style={styles.rankNumber} className="bg-light">1</span>
                         <img style={styles.logo} src={Logo} />
                     </div>
-                    <div class="col-md-7 col-sm-12 ml-3">
+                    <div class="col-md-7 col-sm-12 ml-3 server-desc">
                         <p style={styles.serverDescription} className="ml-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet lacus neque, ac hendrerit erat tincidunt a. Nam nec dolor nec tellus volutpat mollis. Morbi ac magna quis ipsum porttitor tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent lacinia convallis felis, quis ullamcorper dolor congue non.</p>
                     </div>       
                 </div>
                     <div className="row col-md-12">
-                        <div className="bg-dark mt-1 cold-md-4" style={styles.ipContainer}>
+                        <div className="bg-dark mt-1 mb-1 div-center-smart" style={styles.ipContainer}>
                             <img className="ml-2 pb-1" src={playIcon} />
                             <span className="ml-3 text-white">legioncraft.fr</span>
                             <img className="ml-2 pb-1" src={CopyIcon} />
                         </div>
-                        <div className="row col-md-8 ml-2">
+                        <div className="row col-md-8 ml-2 mb-1 content-center">
                             <div style={styles.statContainer} className="bg-dark text-right mt-1 col-3">
                                 <span style={styles.statText} className="mx-auto p-1">Taux: 5%</span>
                             </div>
@@ -45,7 +46,7 @@ const ServeurItem = () => {
                     <div style={styles.badgeItem} className="p-1 mt-2">Plus attractif</div>
                     <div style={styles.badgeItem} className="p-1 mt-2">Nouveau</div>
                 </div>
-                <div style={styles.voteContainer} className="bg-secondary text-right mt-2 text-center">
+                <div style={styles.voteContainer} className="div-center-smart bg-secondary text-right mt-2 text-center">
                     <span style={styles.voteText} className="mx-auto text-dark">Voter</span>
                 </div>
             </div>

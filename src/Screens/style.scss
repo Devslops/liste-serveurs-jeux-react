@@ -30,8 +30,8 @@
 
 .sb-title-text {
     font-family: 'Arial';
-    font-size: 14px;
-    height: 4vh;
+    font-size: 15px;
+    height: 3vh;
     padding: 10px;
 }
 
@@ -57,17 +57,38 @@
     }
 }
 
+#copyright-margin {
+    margin-left: 5
+}
+
+.side-nav-arrow{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 9999;
+}
+
+.side-nav-arrow.nav-open{
+    left: 35%;
+}
+
 @media screen and (max-width: 700px) {
     .sidebar {
         height: 100vh;
         background-color: #464D58;
         opacity: 0.8;
         color: white;
-        width: 25%;
+        width: 35%;
         position: fixed;
         z-index: 200;
         left: -100%;
+        top: 0px;
         animation: slide-open 0.5s forwards;
+       
+    }
+
+    .side-nav-arrow.hidden{
+        left: 35%;
     }
 
     @keyframes slide-open {
@@ -97,4 +118,23 @@
         align-items: center;
         padding-left: 20px;
     }
+
+    .servers-container {
+        text-align: center;
+        
+        .server-desc {
+            margin-left:0 !important;
+            text-align: left;
+        }
+
+        .div-center-smart {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content-center {
+            justify-content: center;
+        }
+    }
+
   }

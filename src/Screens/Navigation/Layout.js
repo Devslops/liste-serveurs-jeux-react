@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Footer from './Footer'
-import Toggle from './components/Toggle'
 
 const Layout = ({Content}) => {
 
@@ -24,16 +23,15 @@ const Layout = ({Content}) => {
 
     return (
         <div>
+            <div className={sidebarState?"side-nav-arrow nav-open":"side-nav-arrow"}>
+                <button id="toggle" onClick={ToggleSideBar}>&#8801;</button>
+            </div>
             <Header />
             <div class="row">
-                <div className="col-1"></div>
-                <div className="col-2">{sideBar}</div>
-                <div className="col">
-                    <Toggle ToggleSideBar={ToggleSideBar} className="col-sm-12" />
-                    <div>
+                <div className="offset-md-1 col-md-2">{sideBar}</div>
+                    <div className="col">
                         {Content}
                     </div>
-                </div>
             </div>
             <Footer />
         </div>

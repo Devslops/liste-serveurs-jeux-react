@@ -22,7 +22,7 @@ const ServerScreen = () => {
           }
           ContentBody={
 
-            <div className="row col-md-10">
+            <div className="row col-md-10 mt-2">
               
               <div className="row serveurs">
                 <ServerItem />

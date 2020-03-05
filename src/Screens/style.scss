@@ -68,6 +68,10 @@
     z-index: 9999;
 }
 
+.custom-height-container {
+    height: 50vh !important
+}
+
 .side-nav-arrow.nav-open{
     animation: sidebar-open 0.57s forwards;
 }
@@ -145,6 +149,9 @@
 
     }
     .horizontal-center {
-        margin: 0 auto;
+        margin: 0 auto !important;
+    }
+    .custom-height-container {
+        height: 50% !important
     }
   }

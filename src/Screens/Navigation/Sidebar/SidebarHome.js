@@ -1,8 +1,8 @@
 import React from 'react';
 
-import "../style.scss"
+import "../../style.scss"
 
-const SideBar = ({ToggleSideBar}) => {
+const SideBarHome = ({ToggleSideBar}) => {
 
     return (
         <>
@@ -52,4 +52,4 @@ const SideBar = ({ToggleSideBar}) => {
     )
 }
 
-export default SideBar;
+export default SideBarHome;

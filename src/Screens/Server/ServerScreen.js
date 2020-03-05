@@ -11,8 +11,9 @@ import ServerItem from './components/ServerItem'
 const ServerScreen = () => {
     return(
         <>
-          <Layout          
-          ContentHeader= {
+          <Layout
+          SidebarType="home"          
+          ContentHeader={
             <div style={styles.headerContainer} className="row">
                 <button className="btn btn-secondary col-md-1 mx-auto offset-md-3" style={styles.addServerButton}>Ajouter un serveur</button>
                 <p style={styles.mainText} className="text-white mx-auto col-md-4">Vous cherchez le meilleur serveur minecraft gratuit ? Vous trouverez des serveurs français de tous les types. Découvrez les meilleurs serveurs Minecraft premiums et  crackés parmis les catégories PvP, Faction, PvPBox, Skyblock, Survie, RP, MMO et bien d'autres </p>

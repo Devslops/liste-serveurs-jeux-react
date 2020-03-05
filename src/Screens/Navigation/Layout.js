@@ -41,7 +41,7 @@ const Layout = ({ContentHeader, ContentBody, SidebarType}) => {
                 ContentHeader
             }/>
             <div class="row" style={{minHeight: "53vh"}}>
-                {SidebarType?<div className='offset-md-1 col-md-2'>+{sideBar}+</div>:""}
+                {SidebarType?<div className='offset-md-1 col-md-2'>{sideBar}</div>:""}
                     <div className="col mt-5">
                         {ContentBody}
                     </div>

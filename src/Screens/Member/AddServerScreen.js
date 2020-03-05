@@ -13,7 +13,7 @@ import exitIcon from '../../images/icons/exit-white.png'
 import discordIcon from '../../images/icons/discord-white.png'
 import editIcon from '../../images/icons/edit-secondary.png'
 
-const ProfileScreen = () => {
+const AddServerScreen = () => {
     return(
         <>
           <Layout
@@ -47,7 +47,7 @@ const ProfileScreen = () => {
     );
 }
 
-export default ProfileScreen;
+export default AddServerScreen;
 
 const styles = {
     headerContainer: {

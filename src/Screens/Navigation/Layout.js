@@ -5,7 +5,7 @@ import Sidebar from './Sidebar'
 import Footer from './Footer'
 import FiltreIcon from '../../images/icons/filtre.png'
 
-const Layout = ({Content}) => {
+const Layout = ({ContentHeader, ContentBody}) => {
 
     const [sidebarState, setSideBarState] = useState(true)
 
@@ -27,11 +27,13 @@ const Layout = ({Content}) => {
             <div className={sidebarState?"side-nav-arrow nav-open":"side-nav-arrow"}>
                 <img id="toggle" onClick={ToggleSideBar} src={FiltreIcon} />
             </div>
-            <Header />
+            <Header ContentHeader={
+                ContentHeader
+            }/>
             <div class="row">
                 <div className="offset-md-1 col-md-2">{sideBar}</div>
                     <div className="col mt-5">
-                        {Content}
+                        {ContentBody}
                     </div>
             </div>
             <Footer />
@@ -40,3 +42,19 @@ const Layout = ({Content}) => {
 }
 
 export default Layout;
+
+const styles = {
+    addServerButton: {
+        borderRadius: 1,
+        height: 45,
+        maxWidth: 225,
+        minWidth: 225,
+        borderRadius: 1
+    },
+    mainText: {
+        color: 'white',
+        textAlign: 'center',
+        maxWidth: 750,
+        padding: 15
+    }
+}

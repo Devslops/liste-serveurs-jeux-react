@@ -8,8 +8,8 @@ const ServerDetail = () => {
     return (
         <Layout Content={
             <>
-                <div style={styles.container} className="horizontal-center">
-                    <div style={styles.quickInfo} className="text-white w-75">
+                <div style={styles.container}>
+                    <div style={styles.quickInfo} className="text-white w-75 horizontal-center">
                         <div className="bg-light p-2"><h3 style={styles.title}>Informations du serveur</h3></div>
                         <div class="row mx-auto mt-3 p-3">
                             <img src={Logo} style={styles.logo} />
@@ -21,7 +21,7 @@ const ServerDetail = () => {
                             </ul>
                         </div>
                     </div>
-                    <div style={styles.quickInfo} className="text-white w-75 mt-3">
+                    <div style={styles.quickInfo} className="text-white w-75 mt-3 horizontal-center">
                         <div className="bg-light p-2"><h3 style={styles.title}>Les statistiques</h3></div>
                             <div class="row mx-auto mt-3 p-3 justify-content-md-center">
                                 <div style={styles.statContainer} className="text-white w-25 mt-3 bg-dark text-center mr-2 col-12 col-md-3">
@@ -38,11 +38,11 @@ const ServerDetail = () => {
                                 </div>
                             </div>
                     </div>
-                    <div style={styles.quickInfo} className="text-white w-75 mt-3 mb-5">
+                    <div style={styles.quickInfo} className="text-white w-75 mt-3 mb-5 horizontal-center">
                         <div className="bg-light p-2"><h3 style={styles.title}>Les badges obtenus</h3></div>
                         <div class="mx-auto mt-3 p-3">
                             <ul className="list-unstyled row text-center">
-                                <li className="bg-dark p-2 col-md-2 ml-2 mb-2">Tendance</li>
+                                <li className="bg-dark p-2 rounded col-md-2 ml-2 mb-2">Tendance</li>
                                 <li className="bg-dark p-2 rounded col-md-2 ml-2 mb-2">Tendance</li>
                                 <li className="bg-dark p-2 rounded col-md-2 ml-2 mb-2">Tendance</li>
                                 <li className="bg-dark p-2 rounded col-md-2 ml-2 mb-2">Tendance</li>
@@ -62,7 +62,9 @@ export default ServerDetail;
 
 const styles = {
     container: {
-        fontSize: 14
+        fontSize: 14,
+        marginLeft: 'auto',
+        marginRight: 'auto'
     },
     quickInfo: {
         backgroundColor: '#464D58'

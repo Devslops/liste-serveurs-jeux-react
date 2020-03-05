@@ -9,7 +9,7 @@ const SideBar = ({ToggleSideBar}) => {
             <div className="sidebar shadow mt-5">
                 <div className="bg-light text-center my-auto p-1 mb-5"><h3 className="sb-title-text">Liste personnalisée</h3></div>
                 
-                <div class="filter-container">
+                <div className="filter-container">
                     <h4 className="text-secondary">Versions acceptées</h4>
                     <ul className="list-unstyled">
                         <li>Premium</li>

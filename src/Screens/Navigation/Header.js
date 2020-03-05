@@ -1,9 +1,7 @@
 import React from 'react';
 import Logo from '../../images/logo.png'
 
-import HeaderImg from '../../images/fond/minecraft-screen.png'
-
-const Header = () => {
+const Header = ({ContentHeader}) => {
 
     return (
         <div>
@@ -35,12 +33,7 @@ const Header = () => {
                     </ul>
                 </div>
             </nav>
-            <div style={styles.headerContainer} className="row">
-                <div className="col-md-2"></div>
-                <button className="btn btn-secondary col-md-3 mx-auto" style={styles.addServerButton}>Ajouter un serveur</button>
-                <p style={styles.mainText} className="text-white mx-auto col-md-4">Vous cherchez le meilleur serveur minecraft gratuit ? Vous trouverez des serveurs français de tous les types. Découvrez les meilleurs serveurs Minecraft premiums et  crackés parmis les catégories PvP, Faction, PvPBox, Skyblock, Survie, RP, MMO et bien d'autres </p>
-                <div className="col-md-3"></div>
-            </div>
+            {ContentHeader}
         </div>
     )
 }
@@ -69,26 +62,5 @@ const styles = {
     },
     connexionButton: {
         marginRight: 10
-    },
-    headerContainer: {
-        backgroundImage: "url(" + HeaderImg + ")",
-        maxWidth: 1920,
-        height: 250,
-        alignItems: 'center',
-        fontSize: 15
-
-    },
-    addServerButton: {
-        borderRadius: 1,
-        height: 45,
-        maxWidth: 225,
-        minWidth: 225,
-        borderRadius: 1
-    },
-    mainText: {
-        color: 'white',
-        textAlign: 'center',
-        maxWidth: 750,
-        padding: 15
     }
 }

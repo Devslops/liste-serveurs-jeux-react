@@ -4,6 +4,7 @@ import '../../custom.scss'
 import Layout from '../Navigation/Layout'
 import HeaderImg from '../../images/fond/minecraft-screen.png'
 import DotIcon from '../../images/icons/dot-secondary.png'
+import whiteArrowIcon from '../../images/icons/arrow-white.png'
 
 import ServerItem from './Components/ServerItem'
 
@@ -21,9 +22,9 @@ const MyServersScreen = () => {
           }
           ContentBody={
 
-            <div className="row col-md-10">
-              
-              <div className="row serveurs mt-2">
+            <div className="row col-md-10 mt-2">
+              <button type="submit" className='bg-secondary border-0 text-white mt-3' style={styles.customButton}>Nouveau <img src={whiteArrowIcon} className='ml-2' /></button>
+              <div className="row serveurs">
                 <ServerItem />
               </div>
 
@@ -60,5 +61,6 @@ const styles = {
       textAlign: 'center',
       maxWidth: 750,
       padding: 15
-  }
+  },
+  customButton: {  padding: 7 }
 }

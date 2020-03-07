@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../images/logo.png'
+import { Link } from "react-router-dom";
 
 const Header = ({ContentHeader}) => {
 
@@ -14,21 +15,21 @@ const Header = ({ContentHeader}) => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">SERVEURS <span className="sr-only">(current)</span></a>
+                            <Link to="/" className="nav-link" href="#">SERVEURS <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">AJOUTER UN SERVEUR</a>
+                            <Link to="nouveau-serveur" className="nav-link" href="#">AJOUTER UN SERVEUR</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">PUBLICITÉ</a>
+                            <Link to="publicite" className="nav-link" href="#">PUBLICITÉ</Link>
                         </li>
                     </ul>
                     <ul className="navbar-nav ml-auto list-unstyled">
                         <li className="nav-item">
-                            <a  className="nav-link text-white" style={styles.connexionButton} href="#">SE CONNECTER</a>
+                            <Link to="membre" className="nav-link text-white" style={styles.connexionButton} href="#">SE CONNECTER</Link>
                         </li>
                         <li className="bg-secondary my-auto" style={styles.registerButton}>
-                            <a className="text-dark" href="#">S'INSCRIRE</a>
+                            <Link to="membre" className="text-dark" href="#">S'INSCRIRE</Link>
                         </li>
                     </ul>
                 </div>

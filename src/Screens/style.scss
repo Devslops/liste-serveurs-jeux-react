@@ -1,10 +1,3 @@
-#toggle {
-    visibility: hidden;
-}
-#close  {
-    visibility: hidden;
-}
-
 .sidebar {
     margin-top: 2%;
     height: 90vh;
@@ -26,6 +19,13 @@
             margin-left: 5px;
         }
     }
+}
+
+#toggle {
+    visibility: hidden;
+}
+#close  {
+    visibility: hidden;
 }
 
 .sb-title-text {
@@ -59,6 +59,29 @@
 
 #copyright-margin {
     margin-left: 5
+}
+
+.bullet-custom ul {
+    list-style: none;
+}
+.bullet-custom ul li::before {
+    content: "\2022";  
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.bullet-blue li::before{
+    color: #00ADB5 !important;
+}
+.bullet-yellow li::before{
+    color: #FBD157 !important;
+}
+.bullet-green li::before{
+    color: #B0EACD !important;
+}
+.bullet-red li::before{
+    color: #F67280 !important;
 }
 
 .side-nav-arrow{

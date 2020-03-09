@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import "../../style.scss"
 import Logo from '../../../images/icons/logo.png'
 import playIcon from '../../../images/icons/play-secondary.png'
@@ -6,7 +7,7 @@ import CopyIcon from '../../../images/icons/copy.png'
 
 const ServerItem = () => {
     return (
-        <div className="servers-container bg-light mt-3 row shadow" style={styles.container}>
+        <Link to="/serveur" className="servers-container bg-light mb-3 row shadow" style={styles.container}>
             <div className="col-md-11">
                 <div class="row bg-dark p-1 mr-3">
                     <span class="bg-secondary" style={styles.typeServerItem}>Skyblock</span>
@@ -50,7 +51,7 @@ const ServerItem = () => {
                     <span style={styles.voteText} className="mx-auto text-dark">Voter</span>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

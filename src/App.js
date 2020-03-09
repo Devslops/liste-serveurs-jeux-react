@@ -15,6 +15,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path='/' component={() => <ServerScreen />}></Route>
+        <Route exact path='/serveurs' component={() => <ServerScreen />}></Route>
         <Route exact path='/serveur' component={() => <ServerDetail />}></Route>
         <Route exact path='/membre' component={() => <MemberScreen />}></Route>
         <Route exact path='/profile' component={() => <ProfileScreen />}></Route>

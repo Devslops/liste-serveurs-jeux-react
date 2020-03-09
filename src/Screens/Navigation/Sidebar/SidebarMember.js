@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import "../../style.scss"
 
@@ -16,10 +17,10 @@ const SideBarMember = ({ToggleSideBar}) => {
                 
                 <div className="filter-container">
                     <ul className="list-unstyled">
-                        <li className='mb-2'><img src={IdentityIcon} className="mr-2"/>Mon profile</li>
-                        <li className='mb-2'><img src={ListIcon} className="mr-2"/>Mes serveurs</li>
-                        <li className='mb-2'><img src={AdIcon} className="mr-2"/>Publicité</li>
-                        <li className='mb-2'><img src={ChartIcon} className="mr-2"/>Statistiques</li>
+                        <li className='mb-2'><Link to="profile"><img src={IdentityIcon} className="mr-2"/>Mon profile</Link></li>
+                        <li className='mb-2'><Link to="mes-serveurs"><img src={ListIcon} className="mr-2"/>Mes serveurs</Link></li>
+                        <li className='mb-2'><Link to="publicite"><img src={AdIcon} className="mr-2"/>Publicité</Link></li>
+                        <li className='mb-2'><Link to="profile"><img src={ChartIcon} className="mr-2"/>Statistiques</Link></li>
                     </ul>
 
                 </div>

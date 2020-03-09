@@ -22,7 +22,7 @@ const AdvertiseScreen = () => {
             </div>
           }
           ContentBody={
-            <div className="col mt-4">
+            <div className="col mt-1">
                 <div className="row">
                     <div className="col-md-5 col-sm-12 mb-2" style={styles.divContainer}>
                         <div className="bg-light text-white p-2" style={styles.divTitle}><img src={MoneyIcon} className="ml-3" /> Booster économique</div>

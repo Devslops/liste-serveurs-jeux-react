@@ -26,7 +26,7 @@ const AddServerScreen = () => {
             </div>
           }
           ContentBody={
-            <div className="row col-md-10 mt-4">
+            <div className="row col-md-10">
               <div className="col-md-10 offset-md-1 mb-2 mr-5" style={styles.formContainer}>
                 <div className="bg-light text-white p-2" style={styles.formTitle}><img src={editIcon} className="ml-3" /> Ajouter votre serveur</div>
                 <div style={styles.customBg}>

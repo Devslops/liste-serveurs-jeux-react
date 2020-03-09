@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../custom.scss'
+import { Link } from "react-router-dom"
 
 import Layout from '../Navigation/Layout'
 import HeaderImg from '../../images/fond/minecraft-screen.png'
@@ -12,10 +13,10 @@ const MyServersScreen = () => {
     return(
         <>
           <Layout
-          SidebarType="home"          
+          SidebarType="member"          
           ContentHeader= {
             <div style={styles.headerContainer} className="row text-center">
-                <div className='align-center col-2 offset-5'>
+                <div className='align-center col-md-4 offset-4 horizontal-center'>
                     <h4 className="text-white align-center"><img src={DotIcon} /> Liste de vos serveurs</h4>
                 </div>
             </div>
@@ -23,7 +24,7 @@ const MyServersScreen = () => {
           ContentBody={
 
             <div className="row col-md-10 mt-2">
-              <button type="submit" className='bg-secondary border-0 text-white mt-3' style={styles.customButton}>Nouveau <img src={whiteArrowIcon} className='ml-2' /></button>
+              <Link to="nouveau-serveur" type="submit" className='bg-secondary border-0 text-white mt-3' style={styles.customButton}>Nouveau <img src={whiteArrowIcon} className='ml-2' /></Link>
               <div className="row serveurs">
                 <ServerItem />
               </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import '../../custom.scss'
 
 import Layout from '../Navigation/Layout'
@@ -15,14 +16,14 @@ const ServerScreen = () => {
           SidebarType="home"          
           ContentHeader={
             <div style={styles.headerContainer} className="row">
-                <button className="btn btn-secondary col-md-1 mx-auto offset-md-3" style={styles.addServerButton}>Ajouter un serveur</button>
+                <Link to="/nouveau-serveur" className="btn btn-secondary col-md-1 mx-auto offset-md-3" style={styles.addServerButton}>Ajouter un serveur</Link>
                 <p style={styles.mainText} className="text-white mx-auto col-md-4">Vous cherchez le meilleur serveur minecraft gratuit ? Vous trouverez des serveurs français de tous les types. Découvrez les meilleurs serveurs Minecraft premiums et  crackés parmis les catégories PvP, Faction, PvPBox, Skyblock, Survie, RP, MMO et bien d'autres </p>
                 <div className="col-md-2"></div>
             </div>
           }
           ContentBody={
 
-            <div className="row col-md-10 mt-2">
+            <div className="row col-md-10 mt-1">
               
               <div className="row serveurs">
                 <ServerItem />

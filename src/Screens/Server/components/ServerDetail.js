@@ -3,10 +3,20 @@ import "../../style.scss"
 
 import Layout from '../../Navigation/Layout'
 import Logo from '../../../images/icons/logo.png'
+import DotIcon from '../../../images/icons/dot-secondary.png'
 
 const ServerDetail = () => {
     return (
-        <Layout Content={
+        <Layout 
+        SidebarType="home"
+        ContentHeader= {
+            <div style={styles.headerContainer} className="row text-center">
+                <div className='align-center col-md-4 offset-md-4'>
+                    <h4 className="text-white align-center"><img src={DotIcon} /> Serveur Skyblock Legioncraft</h4>
+                </div>
+            </div>
+          }
+        ContentBody={
             <>
                 <div style={styles.container}>
                     <div style={styles.quickInfo} className="text-white w-75 horizontal-center">

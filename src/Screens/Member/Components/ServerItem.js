@@ -8,7 +8,7 @@ const ServerItem = () => {
     return (
         <div className="servers-container bg-light mt-3 row shadow" style={styles.container}>
             <div className="col-md-11">
-                <div class="row bg-dark p-1 mr-3">
+                <div class="row bg-dark p-1 mr-2">
                     <span class="bg-secondary" style={styles.typeServerItem}>Skyblock</span>
                 </div>
                     <div class="row mt-3">
@@ -16,24 +16,24 @@ const ServerItem = () => {
                         <span style={styles.rankNumber} className="bg-light">1</span>
                         <img style={styles.logo} src={Logo} />
                     </div>
-                    <div class="col-md-7 col-sm-12 ml-3 server-desc">
-                        <p style={styles.serverDescription} className="ml-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet lacus neque, ac hendrerit erat tincidunt a. Nam nec dolor nec tellus volutpat mollis. Morbi ac magna quis ipsum porttitor tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent lacinia convallis felis, quis ullamcorper dolor congue non.</p>
+                    <div class="col-md-9 col-sm-12 ml-3 server-desc">
+                        <p style={styles.serverDescription} className="ml-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet lacus neque, ac hendrerit erat tincidunt a. Nam nec dolor nec tellus volutpat mollis. Morbi ac magna quis ipsum porttitor tempus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent lacinia convallis felis, quis ullamcorper dolor congue non.</p>
                     </div>       
                 </div>
                     <div className="row col-md-12">
-                        <div className="bg-dark mt-1 mb-1 mr-3 div-center-smart" style={styles.ipContainer}>
+                        <div className="bg-dark mt-1 mb-1 mr-3 horizontal-center" style={styles.ipContainer}>
                             <img className="ml-2 pb-1" src={playIcon} />
                             <span className="ml-3 text-white">legioncraft.fr</span>
                             <img className="ml-2 pb-1" src={CopyIcon} />
                         </div>
-                        <div className="row col-md-8 mb-1 content-center">
-                            <div style={styles.statContainer} className="bg-dark text-right mt-1 col-3">
+                        <div className="row col-md-9 mb-1 content-center">
+                            <div style={styles.statContainer} className="bg-dark text-right mt-1 col-md-2">
                                 <span style={styles.statText} className="mx-auto p-1">Taux: 5%</span>
                             </div>
-                            <div style={styles.statContainer} className="bg-dark text-right mt-1 ml-2 col-3">
+                            <div style={styles.statContainer} className="bg-dark text-right mt-1 ml-2 col-md-2">
                                 <span style={styles.statText} className="mx-auto p-1">Taux: 5%</span>
                             </div>
-                            <div style={styles.statContainer} className="bg-dark text-right mt-1 ml-2 col-3">
+                            <div style={styles.statContainer} className="bg-dark text-right mt-1 ml-2 col-md-2">
                                 <span style={styles.statText} className="mx-auto p-1">Taux: 5%</span>
                             </div>
                             <div style={styles.statsContainer} className="div-center-smart text-right mt-2 text-center offset-md-1 col-md-2">
@@ -49,7 +49,7 @@ const ServerItem = () => {
                     <div style={styles.badgeItem} className="p-1 mt-2">Plus attractif</div>
                     <div style={styles.badgeItem} className="p-1 mt-2">Nouveau</div>
                 </div>           
-                <div style={styles.voteContainer} className="div-center-smart text-right mt-2 text-center col-5 mr-2">
+                <div style={styles.voteContainer} className="div-center-smart text-right mt-2 text-center col-md-5 mr-2">
                     <span style={styles.voteText} className="mx-auto">Editer</span>
                 </div>   
             </div>
